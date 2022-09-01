@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ретрит в Испании</title>
+    <title>Ретрит в Валенсии</title>
 
     <link
         href="app/appart-01-base.css"
@@ -32,6 +32,20 @@
         blockquote {
             margin-left: 2em;
             margin-bottom: 1em;
+        }
+        .highlight {
+            position: relative;
+        }
+        .highlight:before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+          --offset: -1em;
+            top: var(--offset);
+            bottom: var(--offset);
+            left: var(--offset);
+            right: var(--offset);
+            background-color: var(--color-Ivory);
         }
     </style>
 
@@ -97,12 +111,36 @@
         .a-daily-schedule h4 {
             font-weight: bolder;
         }
+        .a-daily-schedule figure {
+            border-radius: 1em;
+            max-width: 16em;
+            position: relative;
+            overflow: hidden;
+        }
+        .a-daily-schedule figure img {
+            width: 100%;
+            border-radius: 1em;
+            display: block;
+        }
+        .a-daily-schedule figcaption {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            padding: 0.5em;
+            background-color: rgba(255,255,255,0.6);
+            font-size: var(--dec-font-size);
+            line-height: var(--dec-line-height);
+        }
+        .a-daily-schedule figcaption a {
+            text-decoration: none;
+            font-weight: bolder;
+        }
         /**/
     </style>
     <article class="a-daily-schedule">
         <header>
             <h1 class="h1">
-                Ретрит в Испании
+                Ретрит в Валенсии
             </h1>
             <blockquote>
                 <p>
@@ -211,6 +249,18 @@
                         <li>По желанию Вечерняя прогулка, Вечерняя медитация перед сном</li>
                     </ul>
                 </dd>
+                <blockquote>
+                    <h4>Для самостоятельной прогулки</h4>
+                    <figure>
+                        <a href="https://www.tripadvisor.ru/Attractions-g187529-Activities-a_allAttractions.true-Valencia_Province_of_Valencia_Valencian_Country.html">
+                            <img src="demo/valence.png" alt="Пляж Валенсии">
+                        </a>
+                        <figcaption>
+                            <p><a href="https://www.tripadvisor.ru/Attractions-g187529-Activities-a_allAttractions.true-Valencia_Province_of_Valencia_Valencian_Country.html">Что посмотреть в Валенсии?</a></p>
+                            <p>Советы на tripadvisor</p>
+                        </figcaption>
+                    </figure>
+                </blockquote>
                 <dt>День 8</dt>
                 <dd>
                     <ul>
