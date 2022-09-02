@@ -20,258 +20,201 @@
         rel="stylesheet" type="text/css">
 
     <link
+        href="app/main.css"
+        rel="stylesheet" type="text/css">
+
+    <link
         media="all"
         href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700&subset=cyrillic"
         rel="stylesheet">
 
-    <style>
-        :root {
-          --palette-text-caption-light: var(--color-NobleDay);
-        }
-        p, li  { max-width: var(--paragraph-width--opt, 32em); }
-        blockquote {
-            margin-left: 2em;
-            margin-bottom: 1em;
-        }
-        .highlight {
-            position: relative;
-        }
-        .highlight:before {
-            content: '';
-            position: absolute;
-            z-index: -1;
-          --offset: -1em;
-            top: var(--offset);
-            bottom: var(--offset);
-            left: var(--offset);
-            right: var(--offset);
-            background-color: var(--color-Ivory);
-        }
-    </style>
-
 </head>
 <body>
-    <style>
-        .a-daily-schedule {
-            padding: 2em;
-        }
-        .a-daily-schedule .introduction {
-          --font-size:   var(--inc-font-size, 1.25em);
-          --line-height: calc(32/20);
-            font-size:   var(--font-size);
-            line-height: var(--line-height);
-        }
-        .a-daily-schedule .introduction p {
-            max-width: var(--paragraph-width--max, 42em);
-        }
-        /* Grid */
-        .a-daily-schedule dl {
-            display: grid;
-            grid-gap: 2em;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto;
-            grid-auto-flow:  row;
-            grid-auto-rows:  min-content;
-            align-items:     start;
-            justify-content: start;
-        }
-        .a-daily-schedule dl>*  { grid-column: 3; }
-        .a-daily-schedule dl>dt { grid-column: 1; }
-        .a-daily-schedule dl>dd { grid-column: 2; }
-        @media all and (max-width: 54em) {
-            .a-daily-schedule dl {
-                grid-template-columns: auto;
-            }
-            .a-daily-schedule dl>*  { grid-column: 1; }
-            .a-daily-schedule dl>dt { grid-column: 1; }
-            .a-daily-schedule dl>dd { grid-column: 1; }
-        }
-        /**/
-        /* Design */
-        .a-daily-schedule header {
-            padding-bottom: 2em;
-        }
-        .a-daily-schedule header>p {
-             max-width: var(--paragraph-width--max, 42em);
-        }
-        .a-daily-schedule dt {
-            font-family: var(--font-family-secondary, sans-serif);
-            font-size: 1.5em;
-            line-height: 1;
-            white-space: nowrap;
-            color: var(--palette-text-caption-light);
-        }
-        .a-daily-schedule dd ul {
-            margin-left: 0;
-            padding-left: 0;
-        }
-        .a-daily-schedule dd li {
-            padding-bottom: 0.25em;
-        }
-        .a-daily-schedule h4 {
-            font-weight: bolder;
-        }
-        .a-daily-schedule figure {
-            border-radius: 1em;
-            max-width: 16em;
-            position: relative;
-            overflow: hidden;
-        }
-        .a-daily-schedule figure img {
-            width: 100%;
-            border-radius: 1em;
-            display: block;
-        }
-        .a-daily-schedule figcaption {
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-            padding: 0.5em;
-            background-color: rgba(255,255,255,0.6);
-            font-size: var(--dec-font-size);
-            line-height: var(--dec-line-height);
-        }
-        .a-daily-schedule figcaption a {
-            text-decoration: none;
-            font-weight: bolder;
-        }
-        /**/
-    </style>
-    <article class="a-daily-schedule">
-        <header>
-            <h1 class="h1">
-                Ретрит в Валенсии
-            </h1>
-            <blockquote>
-                <p>
-                Ретри́т («уединение», «удаление от общества») — английское слово, вошедшее в русский язык как международное обозначение времяпрепровождения, посвящённого духовной практике.
-                <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%82%D1%80%D0%B8%D1%82">Wikipedia</a>
-                </p>
-            </blockquote>
-            <div class="introduction">
-                <p>Путешествие рассчитано на людей, которые ищут глубокого самопознания и готовы отправиться в глубину себя в поиске собственных внутренних ресурсов, смыслов и осознаний. А также для тех, кто хочет вырваться из бытовой рутины и перезагрузить себя к новой жизни.</p>
-            </div>
-        </header>
-        <section>
-            <h2 class="h2">Расписание</h2>
-            <dl>
-                <dt>День 1</dt>
-                <dd>
-                    <ul>
-                        <li>Прибытие, размещение на вилле</li>
-                        <li>Вечером — круг знакомства и практикум «Основы медитации», ответы на вопросы</li>
-                    </ul>
-                </dd>
-                <dt>День 2</dt>
-                <dd>
-                    <ul>
-                        <li>Утренняя Медитация или зарядка/тайцзи</li>
-                        <li>Завтрак</li>
-                        <li>1-й день семинара телесно-ориентированной терапии</li>
-                        <li>Обед, сиеста</li>
-                        <li>Продолжение семинара</li>
-                        <li>Ужин</li>
-                        <li>Вечерняя прогулка, ответы на вопросы</li>
-                        <li>Вечерняя медитация перед сном</li>
-                    </ul>
-                </dd>
-                <blockquote>
-                    <h4>Семинар телесно-ориентированной терапии (ТОП)</h4>
-                    <p>Первые два дня — интенсив по разблокировке тела, который завершится динамической медитацией, позволяющей через освобождение тела, убрать препятствия к целям</p>
-                </blockquote>
-                <dt>День 3</dt>
-                <dd>
-                    <ul>
-                        <li>Утренняя Медитация или зарядка/тайцзи</li>
-                        <li>Завтрак</li>
-                        <li>2-й день семинара ТОП</li>
-                        <li>Обед, сиеста</li>
-                        <li>Продолжение семинара</li>
-                        <li>Ужин</li>
-                        <li>Вечерняя прогулка, ответы на вопросы</li>
-                        <li>Вечерняя медитация перед сном</li>
-                    </ul>
-                </dd>
-                <dt>День 4</dt>
-                <dd>
-                    <ul>
-                        <li>Утренняя Медитация или зарядка/тайцзи</li>
-                        <li>Завтрак</li>
-                        <li>Перерыв в практиках</li>
-                        <li>Ужин</li>
-                        <li>Вечерняя прогулка, ответы на вопросы</li>
-                        <li>Вечерняя медитация перед сном</li>
-                    </ul>
-                </dd>
-                <blockquote>
-                    <h4>Перерыв в практиках</h4>
-                    <p>В этот день будет организованная экскурсия для желающих — либо выезд в город, либо прогулка на яхте и/или дайвинг. Для остающихся на вилле будет занятие по Экстатик дэнс.</p>
-                </blockquote>
-                <dt>День 5</dt>
-                <dd>
-                    <ul>
-                        <li>Утренняя Медитация или зарядка/тайцзи</li>
-                        <li>Завтрак</li>
-                        <li>3-й день семинара ТОП</li>
-                        <li>Обед, сиеста</li>
-                        <li>Продолжение практик</li>
-                        <li>Ужин</li>
-                        <li>Вечерняя прогулка, ответы на вопросы</li>
-                        <li>Вечерняя медитация перед сном</li>
-                    </ul>
-                </dd>
-                <blockquote>
-                    <h4>Семинар телесно-ориентированной терапии (ТОП)</h4>
-                    <p>Вторые два дня — спокойные расслабляющие практики из танатотерапии, продолжающие освобождение тела и завершающие интеграцию процессов</p>
-                </blockquote>
-                <dt>День 6</dt>
-                <dd>
-                    <ul>
-                        <li>Утренняя Медитация или зарядка/тайцзи</li>
-                        <li>Завтрак</li>
-                        <li>4-й день семинара ТОП</li>
-                        <li>Обед, сиеста</li>
-                        <li>Продолжение практик</li>
-                        <li>Ужин</li>
-                        <li>Вечерняя прогулка, ответы на вопросы</li>
-                        <li>Вечерняя медитация перед сном</li>
-                    </ul>
-                </dd>
-                <dt>День 7</dt>
-                <dd>
-                    <ul>
-                        <li>Утренняя Медитация или зарядка/тайцзи</li>
-                        <li>Завтрак</li>
-                        <li>Здесь тоже день экскурсий, либо свободное время, либо медитативные танцы по желанию</li>
-                        <li>Обед, сиеста</li>
-                        <li>Свободное время, время на сборы</li>
-                        <li>Ужин</li>
-                        <li>По желанию Вечерняя прогулка, Вечерняя медитация перед сном</li>
-                    </ul>
-                </dd>
-                <blockquote>
-                    <h4>Для самостоятельной прогулки</h4>
-                    <figure>
-                        <a href="https://www.tripadvisor.ru/Attractions-g187529-Activities-a_allAttractions.true-Valencia_Province_of_Valencia_Valencian_Country.html">
-                            <img src="demo/valence.png" alt="Пляж Валенсии">
-                        </a>
-                        <figcaption>
-                            <p><a href="https://www.tripadvisor.ru/Attractions-g187529-Activities-a_allAttractions.true-Valencia_Province_of_Valencia_Valencian_Country.html">Что посмотреть в Валенсии?</a></p>
-                            <p>Советы на tripadvisor</p>
-                        </figcaption>
-                    </figure>
-                </blockquote>
-                <dt>День 8</dt>
-                <dd>
-                    <ul>
-                        <li>Утренняя Медитация или зарядка/тайцзи</li>
-                        <li>Завтрак</li>
-                        <li>Возвращение домой</li>
-                    </ul>
-                </dd>
-            </dl>
-        </section>
-    </article>
+<header class="a-pagehead">
+    <div>
+        TRO Therapy
+    </div>
+    <div>
+        Мероприятия
+    </div>
+</header>
+<article class="a-retritintro">
+    <h1 class="h1">
+        Ретрит в Валенсии
+    </h1>
+    <blockquote>
+        <p>
+        Ретри́т («уединение», «удаление от общества») — английское слово, вошедшее в русский язык как международное обозначение времяпрепровождения, посвящённого духовной практике.
+        <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%82%D1%80%D0%B8%D1%82">Wikipedia</a>
+        </p>
+    </blockquote>
+    <div class="introduction">
+        <p>Путешествие рассчитано на людей, которые ищут глубокого самопознания и готовы отправиться в глубину себя в поиске собственных внутренних ресурсов, смыслов и осознаний. А также для тех, кто хочет вырваться из бытовой рутины и перезагрузить себя к новой жизни.</p>
+    </div>
+</article>
+<article class="a-dailyschedule">
 
+    <h2 class="h2">Расписание</h2>
+    <dl>
+        <dt>День 1</dt>
+        <dd>
+            <ul>
+                <li>Прибытие, размещение на вилле</li>
+                <li>Вечером — круг знакомства и практикум «Основы медитации», ответы на вопросы</li>
+            </ul>
+        </dd>
+        <dt>День 2</dt>
+        <dd>
+            <ul>
+                <li>Утренняя Медитация или зарядка/тайцзи</li>
+                <li>Завтрак</li>
+                <li>1-й день семинара телесно-ориентированной терапии</li>
+                <li>Обед, сиеста</li>
+                <li>Продолжение семинара</li>
+                <li>Ужин</li>
+                <li>Вечерняя прогулка, ответы на вопросы</li>
+                <li>Вечерняя медитация перед сном</li>
+            </ul>
+        </dd>
+        <blockquote>
+            <h4>Семинар телесно-ориентированной терапии (ТОП)</h4>
+            <p>Первые два дня — интенсив по разблокировке тела, который завершится динамической медитацией, позволяющей через освобождение тела, убрать препятствия к целям</p>
+        </blockquote>
+        <dt>День 3</dt>
+        <dd>
+            <ul>
+                <li>Утренняя Медитация или зарядка/тайцзи</li>
+                <li>Завтрак</li>
+                <li>2-й день семинара ТОП</li>
+                <li>Обед, сиеста</li>
+                <li>Продолжение семинара</li>
+                <li>Ужин</li>
+                <li>Вечерняя прогулка, ответы на вопросы</li>
+                <li>Вечерняя медитация перед сном</li>
+            </ul>
+        </dd>
+        <dt>День 4</dt>
+        <dd>
+            <ul>
+                <li>Утренняя Медитация или зарядка/тайцзи</li>
+                <li>Завтрак</li>
+                <li>Перерыв в практиках</li>
+                <li>Ужин</li>
+                <li>Вечерняя прогулка, ответы на вопросы</li>
+                <li>Вечерняя медитация перед сном</li>
+            </ul>
+        </dd>
+        <blockquote>
+            <h4>Перерыв в практиках</h4>
+            <p>В этот день будет организованная экскурсия для желающих — либо выезд в город, либо прогулка на яхте и/или дайвинг. Для остающихся на вилле будет занятие по
+            <a href="#EcstaticDance">Экстатик дэнс</a>.</p>
+        </blockquote>
+        <dt>День 5</dt>
+        <dd>
+            <ul>
+                <li>Утренняя Медитация или зарядка/тайцзи</li>
+                <li>Завтрак</li>
+                <li>3-й день семинара ТОП</li>
+                <li>Обед, сиеста</li>
+                <li>Продолжение практик</li>
+                <li>Ужин</li>
+                <li>Вечерняя прогулка, ответы на вопросы</li>
+                <li>Вечерняя медитация перед сном</li>
+            </ul>
+        </dd>
+        <blockquote>
+            <h4>Семинар телесно-ориентированной терапии (ТОП)</h4>
+            <p>Вторые два дня — спокойные расслабляющие практики из танатотерапии, продолжающие освобождение тела и завершающие интеграцию процессов</p>
+        </blockquote>
+        <dt>День 6</dt>
+        <dd>
+            <ul>
+                <li>Утренняя Медитация или зарядка/тайцзи</li>
+                <li>Завтрак</li>
+                <li>4-й день семинара ТОП</li>
+                <li>Обед, сиеста</li>
+                <li>Продолжение практик</li>
+                <li>Ужин</li>
+                <li>Вечерняя прогулка, ответы на вопросы</li>
+                <li>Вечерняя медитация перед сном</li>
+            </ul>
+        </dd>
+        <dt>День 7</dt>
+        <dd>
+            <ul>
+                <li>Утренняя Медитация или зарядка/тайцзи</li>
+                <li>Завтрак</li>
+                <li>Здесь тоже день экскурсий, либо свободное время, либо медитативные танцы по желанию</li>
+                <li>Обед, сиеста</li>
+                <li>Свободное время, время на сборы</li>
+                <li>Ужин</li>
+                <li>По желанию Вечерняя прогулка, Вечерняя медитация перед сном</li>
+            </ul>
+        </dd>
+        <blockquote>
+            <h4>Для самостоятельной прогулки</h4>
+            <figure>
+                <a href="https://www.tripadvisor.ru/Attractions-g187529-Activities-a_allAttractions.true-Valencia_Province_of_Valencia_Valencian_Country.html">
+                    <img src="demo/valence.png" alt="Пляж Валенсии">
+                </a>
+                <figcaption>
+                    <p><a href="https://www.tripadvisor.ru/Attractions-g187529-Activities-a_allAttractions.true-Valencia_Province_of_Valencia_Valencian_Country.html">Что посмотреть в Валенсии?</a></p>
+                    <p>Советы на tripadvisor</p>
+                </figcaption>
+            </figure>
+        </blockquote>
+        <dt>День 8</dt>
+        <dd>
+            <ul>
+                <li>Завтрак</li>
+                <li>Возвращение домой</li>
+            </ul>
+        </dd>
+    </dl>
+</article>
+<article class="a-placedescription">
+    <h2 class="h2">Место проведения</h2>
+    <h3 class="h3"><i>Villa Las Chapas Playa</i></h3>
+</article>
+<article class="a-programdetails">
+    <h2 class="h2">Подробности программы</h2>
+    <div class="cards">
+        <div>
+            <h4 class="h4">Семинар телесно-ориентированной терапии (ТОП)</h4>
+            <p>Первые два дня — интенсив по разблокировке тела, который завершится динамической медитацией, позволяющей через освобождение тела, убрать препятствия к целям</p>
+            <p>Вторые два дня — спокойные расслабляющие практики из танатотерапии, продолжающие освобождение тела и завершающие интеграцию процессов</p>
+        </div>
+        <div>
+            <a name="EcstaticDance"></a>
+            <h4 class="h4">Экстатик дэнс</h4>
+            <p>Судя по названию, это танец, где вы начинаете двигаться  задумываясь о своей жизни. Через некоторое время, приходит осознание, что именно надо написать в этом месте: «<b>Э! Кстати</b>, надо написать...»</p>
+        </div>
+    </div>
+</article>
+<article class="a-faq">
+    <h2 class="h2">Бытовые вопросы</h2>
+    <h3 class="h3">Где я буду жить?</h3>
+    <p>На вилле есть уютные номера с двумя или четыремя спальными местами каждый. Душь и туалет в каждом номере. Есть возможность зарезервировать отдельный гостевой домик на берегу моря.</p>
+    <h3 class="h3">Что я буду есть?</h3>
+    <p>О вашем питании будут заботиться профессиональные повара работающие на вилле. Будут доступны как обычные, так и вегетарианские блюда.</p>
+    <h3 class="h3">Что взять с собой?</h3>
+    <p>...</p>
+</article>
+<article class="a-contacts">
+    <h2 class="h2">Контакты для связи</h2>
+    <div class="cards">
+        <div>
+            <h4 class="h4">+371 111 111 11</h4>
+            <p>Мы ответим на звонок в рабочие часы c 10 до 18, по восточно-европейскому времени (Хельсинки, Рига, Киев)</p>
+        </div>
+        <div>
+            <h4 class="h4">tro-therapy@gmail.com</h4>
+        </div>
+        <div>
+            <h4 class="h4">телеграм</h4>
+            <p><a href="#">tro-therapy</a></p>
+        </div>
+    </div>
+</article>
 </body>
 </html>
